@@ -15,6 +15,7 @@
 		F853776D27C3E65C00D6EFA6 /* NewRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F853776C27C3E65C00D6EFA6 /* NewRecipeView.swift */; };
 		F853776F27C3E6C000D6EFA6 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F853776E27C3E6C000D6EFA6 /* FavoritesView.swift */; };
 		F853777127C3E6E800D6EFA6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F853777027C3E6E800D6EFA6 /* SettingsView.swift */; };
+		F853777527C3E9AE00D6EFA6 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F853777427C3E9AE00D6EFA6 /* TabBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		F853776C27C3E65C00D6EFA6 /* NewRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipeView.swift; sourceTree = "<group>"; };
 		F853776E27C3E6C000D6EFA6 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		F853777027C3E6E800D6EFA6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F853777427C3E9AE00D6EFA6 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		F853776727C3E5A000D6EFA6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F853777427C3E9AE00D6EFA6 /* TabBarView.swift */,
 				F853776827C3E5B700D6EFA6 /* HomeView.swift */,
 				F853776A27C3E62A00D6EFA6 /* CategoriesView.swift */,
 				F853776C27C3E65C00D6EFA6 /* NewRecipeView.swift */,
@@ -175,6 +178,7 @@
 			files = (
 				F853776F27C3E6C000D6EFA6 /* FavoritesView.swift in Sources */,
 				F853776927C3E5B700D6EFA6 /* HomeView.swift in Sources */,
+				F853777527C3E9AE00D6EFA6 /* TabBarView.swift in Sources */,
 				F853775827C3E4F700D6EFA6 /* RecipesApp.swift in Sources */,
 				F853777127C3E6E800D6EFA6 /* SettingsView.swift in Sources */,
 				F853776B27C3E62A00D6EFA6 /* CategoriesView.swift in Sources */,
