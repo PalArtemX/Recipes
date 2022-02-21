@@ -10,9 +10,12 @@ import SwiftUI
 struct CategoriesView: View {
     var body: some View {
         
+        NavigationView {
             Text("CategoriesView")
-            
+                
                 .navigationTitle("Categories")
+        }
+        .navigationViewStyle(.stack)
     }
 }
 
