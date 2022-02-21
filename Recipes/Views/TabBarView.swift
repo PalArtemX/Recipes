@@ -17,26 +17,31 @@ struct TabBarView: View {
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
+                .tag(0)
                 
             CategoriesView()
                 .tabItem {
                     Label("Categories", systemImage: "list.star")
                 }
+                .tag(1)
             
             NewRecipeView()
                 .tabItem {
                     Label("New Recipe", systemImage: "doc.badge.plus")
                 }
+                .tag(2)
             
             FavoritesView()
                 .tabItem {
                     Label("Favorites", systemImage: "star")
                 }
+                .tag(3)
             
             SettingsView()
                 .tabItem {
                     Label("Settings", systemImage: "gear")
                 }
+                .tag(4)
         }
     }
 }
