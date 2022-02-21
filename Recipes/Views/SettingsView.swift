@@ -1,5 +1,5 @@
 //
-//  HomeView.swift
+//  SettingsView.swift
 //  Recipes
 //
 //  Created by Artem Paliutin on 21.02.2022.
@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct HomeView: View {
+struct SettingsView: View {
     var body: some View {
-        Text("HomeView")
+        Text("SettingsView")
     }
 }
 
@@ -22,8 +22,8 @@ struct HomeView: View {
 
 
 
-struct HomeView_Previews: PreviewProvider {
+struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        SettingsView()
     }
 }
