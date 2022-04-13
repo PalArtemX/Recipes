@@ -11,7 +11,19 @@ struct CategoriesView: View {
     var body: some View {
         
         NavigationView {
-            Text("CategoriesView")
+            List {
+                ForEach(Recipe.Category.allCases) { category in
+                    NavigationLink {
+                        ScrollView {
+                            RecipeListView(recipes: previewRecipe.filter { $0.category.rawValue == category.rawValue })
+                        }
+                    } label: {
+                        Text(category.rawValue)
+                    }
+
+                    
+                }
+            }
                 
                 .navigationTitle("Categories")
         }

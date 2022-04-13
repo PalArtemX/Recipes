@@ -18,6 +18,10 @@
 		F853777527C3E9AE00D6EFA6 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F853777427C3E9AE00D6EFA6 /* TabBarView.swift */; };
 		F853777827C3F13700D6EFA6 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F853777727C3F13700D6EFA6 /* Recipe.swift */; };
 		F85E2F8427E1E27200094D6F /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85E2F8327E1E27200094D6F /* WebService.swift */; };
+		F8F7A38F280719E900EDCF46 /* PreviewRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7A38E280719E900EDCF46 /* PreviewRecipe.swift */; };
+		F8F7A39228071CF800EDCF46 /* RecipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7A39128071CF800EDCF46 /* RecipeCardView.swift */; };
+		F8F7A3942807232E00EDCF46 /* RecipeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7A3932807232E00EDCF46 /* RecipeListView.swift */; };
+		F8F7A39628072F4000EDCF46 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7A39528072F4000EDCF46 /* RecipeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,10 @@
 		F853777427C3E9AE00D6EFA6 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		F853777727C3F13700D6EFA6 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		F85E2F8327E1E27200094D6F /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		F8F7A38E280719E900EDCF46 /* PreviewRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewRecipe.swift; sourceTree = "<group>"; };
+		F8F7A39128071CF800EDCF46 /* RecipeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCardView.swift; sourceTree = "<group>"; };
+		F8F7A3932807232E00EDCF46 /* RecipeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListView.swift; sourceTree = "<group>"; };
+		F8F7A39528072F4000EDCF46 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				F853775E27C3E4F800D6EFA6 /* Preview Assets.xcassets */,
+				F8F7A38E280719E900EDCF46 /* PreviewRecipe.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -109,6 +118,7 @@
 				F853776C27C3E65C00D6EFA6 /* NewRecipeView.swift */,
 				F853776E27C3E6C000D6EFA6 /* FavoritesView.swift */,
 				F853777027C3E6E800D6EFA6 /* SettingsView.swift */,
+				F8F7A39028071CCE00EDCF46 /* Componets */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -127,6 +137,16 @@
 			);
 			name = Services;
 			path = Models;
+			sourceTree = "<group>";
+		};
+		F8F7A39028071CCE00EDCF46 /* Componets */ = {
+			isa = PBXGroup;
+			children = (
+				F8F7A39128071CF800EDCF46 /* RecipeCardView.swift */,
+				F8F7A3932807232E00EDCF46 /* RecipeListView.swift */,
+				F8F7A39528072F4000EDCF46 /* RecipeView.swift */,
+			);
+			path = Componets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,10 +220,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F853776F27C3E6C000D6EFA6 /* FavoritesView.swift in Sources */,
+				F8F7A39228071CF800EDCF46 /* RecipeCardView.swift in Sources */,
 				F853776927C3E5B700D6EFA6 /* HomeView.swift in Sources */,
+				F8F7A38F280719E900EDCF46 /* PreviewRecipe.swift in Sources */,
 				F853777527C3E9AE00D6EFA6 /* TabBarView.swift in Sources */,
 				F853775827C3E4F700D6EFA6 /* RecipesApp.swift in Sources */,
+				F8F7A39628072F4000EDCF46 /* RecipeView.swift in Sources */,
 				F853777127C3E6E800D6EFA6 /* SettingsView.swift in Sources */,
+				F8F7A3942807232E00EDCF46 /* RecipeListView.swift in Sources */,
 				F853776B27C3E62A00D6EFA6 /* CategoriesView.swift in Sources */,
 				F853776D27C3E65C00D6EFA6 /* NewRecipeView.swift in Sources */,
 				F853777827C3F13700D6EFA6 /* Recipe.swift in Sources */,

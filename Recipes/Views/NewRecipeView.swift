@@ -9,12 +9,20 @@ import SwiftUI
 
 struct NewRecipeView: View {
     var body: some View {
-        NavigationView {
-            Text("NewRecipeView")
-                
-                .navigationTitle("New Recipe")
+//        NavigationView {
+//            Text("NewRecipeView")
+//
+//                .navigationTitle("New Recipe")
+//        }
+//        .navigationViewStyle(.stack)
+        Form {
+            Section {
+                Text("ddd")
+            } footer: {
+                Text("fff")
+            }
+
         }
-        .navigationViewStyle(.stack)
     }
 }
 
