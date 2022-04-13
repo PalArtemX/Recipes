@@ -16,6 +16,8 @@
 		F853776F27C3E6C000D6EFA6 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F853776E27C3E6C000D6EFA6 /* FavoritesView.swift */; };
 		F853777127C3E6E800D6EFA6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F853777027C3E6E800D6EFA6 /* SettingsView.swift */; };
 		F853777527C3E9AE00D6EFA6 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F853777427C3E9AE00D6EFA6 /* TabBarView.swift */; };
+		F853777827C3F13700D6EFA6 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F853777727C3F13700D6EFA6 /* Recipe.swift */; };
+		F85E2F8427E1E27200094D6F /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85E2F8327E1E27200094D6F /* WebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		F853776E27C3E6C000D6EFA6 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		F853777027C3E6E800D6EFA6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		F853777427C3E9AE00D6EFA6 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		F853777727C3F13700D6EFA6 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		F85E2F8327E1E27200094D6F /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,8 @@
 				F853776727C3E5A000D6EFA6 /* Views */,
 				F853776627C3E59800D6EFA6 /* ViewModels */,
 				F853776527C3E59000D6EFA6 /* Models */,
+				F85E2F8227E1E25100094D6F /* Services */,
+				F853777927C3F2C200D6EFA6 /* Extension */,
 				F853775B27C3E4F800D6EFA6 /* Assets.xcassets */,
 				F853775D27C3E4F800D6EFA6 /* Preview Content */,
 			);
@@ -82,6 +88,7 @@
 		F853776527C3E59000D6EFA6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F853777727C3F13700D6EFA6 /* Recipe.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -104,6 +111,22 @@
 				F853777027C3E6E800D6EFA6 /* SettingsView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F853777927C3F2C200D6EFA6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F85E2F8227E1E25100094D6F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F85E2F8327E1E27200094D6F /* WebService.swift */,
+			);
+			name = Services;
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +206,8 @@
 				F853777127C3E6E800D6EFA6 /* SettingsView.swift in Sources */,
 				F853776B27C3E62A00D6EFA6 /* CategoriesView.swift in Sources */,
 				F853776D27C3E65C00D6EFA6 /* NewRecipeView.swift in Sources */,
+				F853777827C3F13700D6EFA6 /* Recipe.swift in Sources */,
+				F85E2F8427E1E27200094D6F /* WebService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +265,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -295,7 +320,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
