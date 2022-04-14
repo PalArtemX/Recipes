@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct RecipesApp: App {
+    
+    @StateObject var recipesVM = RecipesViewModel()
+    
     var body: some Scene {
         WindowGroup {
-                TabBarView()
+            TabBarView()
+                .environmentObject(recipesVM)
         }
     }
 }

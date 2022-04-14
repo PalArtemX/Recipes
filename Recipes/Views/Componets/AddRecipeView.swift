@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AddRecipeView: View {
     
+    @EnvironmentObject var recipesVM: RecipesViewModel
     @State private var name = ""
     @State private var selectCategory = Recipe.Category.main
     @State private var description = ""
@@ -94,7 +95,7 @@ struct AddRecipeView: View {
                 // MARK: - Save Button
                 ToolbarItem(placement: .navigationBarTrailing) {
                     NavigationLink(isActive: $navigateToRecipe) {
-                        RecipeView(recipe: previewRecipe.sorted { $0.datePublished > $1.datePublished }[0])
+                        RecipeView(recipe: recipesVM.recipes.sorted { $0.datePublished > $1.datePublished }[0])
                             .navigationBarBackButtonHidden(true)
                     } label: {
                         Button {
@@ -104,8 +105,9 @@ struct AddRecipeView: View {
                                 .symbolRenderingMode(.hierarchical)
                                 .foregroundColor(.green)
                         }
-                        .disabled(name.isEmpty)
+                        
                     }
+                    .disabled(name.isEmpty)
                 }
                 
             }
@@ -127,7 +129,9 @@ struct AddRecipeView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             AddRecipeView()
+                .environmentObject(RecipesViewModel())
             AddRecipeView()
+                .environmentObject(RecipesViewModel())
                 .preferredColorScheme(.dark)
         }
     }
