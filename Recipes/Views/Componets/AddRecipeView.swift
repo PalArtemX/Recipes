@@ -10,12 +10,7 @@ import SwiftUI
 struct AddRecipeView: View {
     
     @EnvironmentObject var recipesVM: RecipesViewModel
-    @State private var name = ""
-    @State private var selectCategory = Recipe.Category.main
-    @State private var description = ""
-    @State private var ingredients = ""
-    @State private var directions = ""
-    @State private var navigateToRecipe = false
+
     
     @Environment(\.dismiss) var dismiss
     
@@ -24,7 +19,7 @@ struct AddRecipeView: View {
             Form {
                 // MARK: - Name
                 Section {
-                    TextField("Recipe Name", text: $name)
+                    TextField("Recipe Name", text: $recipesVM.name)
                 } header: {
                     HStack {
                         Image(systemName: "rectangle.and.pencil.and.ellipsis")
@@ -35,7 +30,7 @@ struct AddRecipeView: View {
                 }
                 // MARK: - Category
                 Section {
-                    Picker("Category", selection: $selectCategory) {
+                    Picker("Category", selection: $recipesVM.selectCategory) {
                         ForEach(Recipe.Category.allCases) { category in
                             Text(category.rawValue)
                                 .tag(category)
@@ -51,7 +46,7 @@ struct AddRecipeView: View {
                 }
                 // MARK: - Description
                 Section {
-                    TextEditor(text: $description)
+                    TextEditor(text: $recipesVM.description)
                 } header: {
                     HStack {
                         Image(systemName: "text.justify.leading")
@@ -61,7 +56,7 @@ struct AddRecipeView: View {
                 }
                 // MARK: - Ingredients
                 Section {
-                    TextEditor(text: $ingredients)
+                    TextEditor(text: $recipesVM.ingredients)
                 } header: {
                     HStack {
                         Image(systemName: "text.justify.leading")
@@ -71,7 +66,7 @@ struct AddRecipeView: View {
                 }
                 // MARK: - Directions
                 Section {
-                    TextEditor(text: $directions)
+                    TextEditor(text: $recipesVM.directions)
                 } header: {
                     HStack {
                         Image(systemName: "text.justify.leading")
@@ -94,12 +89,13 @@ struct AddRecipeView: View {
                 }
                 // MARK: - Save Button
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    NavigationLink(isActive: $navigateToRecipe) {
+                    NavigationLink(isActive: $recipesVM.navigateToRecipe) {
                         RecipeView(recipe: recipesVM.recipes.sorted { $0.datePublished > $1.datePublished }[0])
                             .navigationBarBackButtonHidden(true)
                     } label: {
                         Button {
-                            navigateToRecipe.toggle()
+                            recipesVM.addRecipe()
+                            recipesVM.navigateToRecipe.toggle()
                         } label: {
                             Label("Save", systemImage: "checkmark.square")
                                 .symbolRenderingMode(.hierarchical)
@@ -107,7 +103,7 @@ struct AddRecipeView: View {
                         }
                         
                     }
-                    .disabled(name.isEmpty)
+                    .disabled(recipesVM.name.isEmpty)
                 }
                 
             }
