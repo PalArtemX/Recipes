@@ -13,12 +13,10 @@ struct RecipeView: View {
     var body: some View {
         VStack {
             // MARK: - Image
-            ZStack(alignment: .bottom) {
                 AsyncImage(url: URL(string: recipe.image)) { image in
                     image
                         .resizable()
                         .scaledToFill()
-                    
                 } placeholder: {
                     Image(systemName: "photo.circle")
                         .resizable()
@@ -28,18 +26,6 @@ struct RecipeView: View {
                     
                 }
                 .frame(height: 300)
-                
-                // MARK: - Name
-                Text(recipe.name)
-                    .multilineTextAlignment(.center)
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .shadow(color: .black, radius: 3, x: 0, y: 0)
-                    .padding()
-            }
-            
-
-            
             VStack {
                 Form {
                     // MARK: - Description
@@ -65,9 +51,7 @@ struct RecipeView: View {
                         }
                         .foregroundColor(.accentColor)
                     }
-
                     // MARK: - Directions
-                    
                     Section {
                         Text(recipe.directions)
                     } header: {
@@ -78,14 +62,10 @@ struct RecipeView: View {
                         }
                         .foregroundColor(.accentColor)
                     }
-
-
                 }
-                
             }
-            
-        
         }
+        .navigationTitle(recipe.name)
         .ignoresSafeArea()
     }
 }
